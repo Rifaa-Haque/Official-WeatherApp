@@ -10,9 +10,6 @@ h2 {
   margin: 0;
   line-height: 45px;
 }
-.weather-app-country {
-  font-size: 20px;
-}
 a {
   color: #885df1;
 }
@@ -63,12 +60,10 @@ footer {
   display: flex;
   margin-top: 15px;
   margin-left: 40px;
-  border: 1px solid #f65282;
-  border-radius: 7px;
 }
 .weather-app-details-flex {
   display: flex;
-  margin-right: 350px;
+  margin-right: 300px;
   margin-top: 53px;
   margin-bottom: 20px;
 }
@@ -83,7 +78,7 @@ footer {
   margin-left: 15px;
 }
 .weather-app-temperature {
-  font-size: 70px;
+  font-size: 80px;
 }
 .weather-app-unit {
   font-size: 17px;

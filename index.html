@@ -20,7 +20,9 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h2>📍Paris, <span class="weather-app-country"> France</span></h2>
+            <h2>
+              <span id="city-input"> 📍Paris</span>
+            </h2>
             <div class="temperature-data">
               <span class="weather-app-icon">⛅ </span
               ><span class="weather-app-temperature">12 </span>
@@ -39,12 +41,13 @@
             </p>
           </div>
         </div>
-        <form class="search-form">
+        <form class="search-form" id="search-form-id">
           <input
             type="search"
             placeholder="Enter a city.."
             required
             class="search-form-input"
+            id="search-form-input-id"
           />
           <input type="submit" value="Search" class="search-form-button" />
         </form>
@@ -66,5 +69,6 @@
         >.
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
