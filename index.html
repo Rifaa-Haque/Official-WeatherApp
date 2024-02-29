@@ -18,23 +18,35 @@
         <h1>Today's weather ⛅</h1>
       </header>
       <main>
-        <div>
-          <h2>📍Paris, France</h2>
-          ⛅ 12°C <br />
-          Scattered clouds
+        <div class="weather-app-data">
+          <div>
+            <h2>📍Paris, <span class="weather-app-country"> France</span></h2>
+            <div class="temperature-data">
+              <span class="weather-app-icon">⛅ </span
+              ><span class="weather-app-temperature">12 </span>
+              <div class="weather-app-unit">°C</div>
+            </div>
+          </div>
+          <div class="weather-app-details-flex">
+            <p class="weather-app-details">
+              Tuesday 14:49
+              <br />
+              <span> Scattered clouds </span>
+              <br />
+              Humidity: <strong> 66%</strong>
+              <br />
+              Wind: <strong> 3.13 km/h</strong>
+            </p>
+          </div>
         </div>
-        <div>
-          <p>
-            Tuesday 14:49
-            <br />
-            Humidity: 66%
-            <br />
-            Wind: 3.13 km/h
-          </p>
-        </div>
-        <form>
-          <input type="search" placeholder="Enter a city.." required />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </main>
       <br />
