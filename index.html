@@ -3,47 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Official WeatherApp</title>
   </head>
   <body>
-    <header>
-      <h1>Today's weather ⛅</h1>
-    </header>
-    <main>
-      <div>
-        <h2>📍Paris, France</h2>
-        ⛅ 12°C <br />
-        Scattered clouds
-      </div>
-      <div>
-        <p>
-          Tuesday 14:49
-          <br />
-          Humidity: 66%
-          <br />
-          Wind: 3.13 km/h
-        </p>
-      </div>
-      <form>
-        <input type="search" placeholder="Enter a city.." required />
-        <input type="submit" value="Search" />
-      </form>
-    </main>
-    <br />
-    <footer>
-      This project was coded by
-      <a href="https://github.com/Rifaa-Haque" target="_blank"> Rifaa Haque</a>,
-      is open-sourced on
-      <a
-        href="https://github.com/Rifaa-Haque/Official-WeatherApp"
-        target="_blank"
-      >
-        GitHub</a
-      >
-      and hosted on
-      <a href="https://official-weatherapp.netlify.app/" target="_blank">
-        Netlify</a
-      >.
-    </footer>
+    <div class="app">
+      <header>
+        <h1>Today's weather ⛅</h1>
+      </header>
+      <main>
+        <div>
+          <h2>📍Paris, France</h2>
+          ⛅ 12°C <br />
+          Scattered clouds
+        </div>
+        <div>
+          <p>
+            Tuesday 14:49
+            <br />
+            Humidity: 66%
+            <br />
+            Wind: 3.13 km/h
+          </p>
+        </div>
+        <form>
+          <input type="search" placeholder="Enter a city.." required />
+          <input type="submit" value="Search" />
+        </form>
+      </main>
+      <br />
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Rifaa-Haque" target="_blank"> Rifaa Haque</a
+        >, is open-sourced on
+        <a
+          href="https://github.com/Rifaa-Haque/Official-WeatherApp"
+          target="_blank"
+        >
+          GitHub</a
+        >
+        and hosted on
+        <a href="https://official-weatherapp.netlify.app/" target="_blank">
+          Netlify</a
+        >.
+      </footer>
+    </div>
   </body>
 </html>
