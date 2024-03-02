@@ -2,13 +2,18 @@ function refreshWeather(response) {
   let temperatureElement = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
   let cityElement = document.querySelector("#city-input");
+  let countryElement = document.querySelector("#country-input");
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidityData");
   let windElement = document.querySelector("#windData");
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#icon");
+
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class = "weather-app-icon" />`;
 
   cityElement.innerHTML = response.data.city;
+  countryElement.innerHTML = response.data.country;
   timeElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = response.data.temperature.humidity;
@@ -35,6 +40,10 @@ function formatDate(date) {
     minutes = `0${minutes}`;
   }
 
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+
   return `${day} ${hours}:${minutes}`;
 }
 
@@ -54,4 +63,4 @@ function handleSearchSubmit(event) {
 let searchFormElement = document.querySelector("#search-form-id");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
-searchCity("Montreal");
+searchCity("New York");
