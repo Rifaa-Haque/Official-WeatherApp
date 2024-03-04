@@ -84,6 +84,9 @@ footer {
   color: #f65282;
   font-size: 16px;
 }
+.description {
+  font-weight: bold;
+}
 .weather-app-icon {
   display: flex;
   font-size: 15px;
@@ -101,4 +104,18 @@ footer {
   font-size: 17px;
   display: flex;
   margin-top: 20px;
+}
+.weather-forecast {
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  font-weight: bold;
+}
+.weather-forecast-temperatures {
+  font-weight: bold;
+}
+.weather-forecast-temperature-min {
+  color: #f65282;
+  opacity: 0.7;
 }
