@@ -117,19 +117,22 @@ footer {
   margin-bottom: 7px;
 }
 .weather-forecast-icon {
-  text-align: center;
-  font-size: 38px;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
 }
 .weather-forecast-temperatures {
   font-weight: bold;
   text-align: center;
   font-size: 18px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .weather-forecast-temperature-max {
   opacity: 0.7;
+  padding: 0 5px;
 }
 .weather-forecast-temperature-min {
   color: #f65282;
   opacity: 0.7;
+  padding: 0 5px;
 }
